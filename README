@@ -1,0 +1,30 @@
+# Knock
+
+knock is a simple tool to add an alert to run at specific time. It is useful to remind you to do something at specific time.
+
+## Installation
+
+- Clone the repository
+- Depending on your system, you can run the following command to install the package
+
+```bash
+# For Linux-x64
+make install/linux-x64
+# For Linux-x86
+make install/linux-x86
+# For Windows-x64
+make install/windows-x64
+# For Windows-x86
+make install/windows-x86
+```
+
+## Usage
+
+- To add a new alert, run the following command
+
+```bash
+# knock -d <duration> -m <message>
+knock -d "15s" -m "Hello World" # This will add an alert to run after 15 seconds
+knock -d "1h" -m "Hello World" # This will add an alert to run after 1 hour
+knock -d "1m" -m "Hello World" # This will add an alert to run after 1 minute
+```
